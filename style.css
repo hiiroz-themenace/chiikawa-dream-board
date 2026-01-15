@@ -1,0 +1,276 @@
+:root {
+    --bright-primary: #FFF3dd;
+    --dark-primary: #3C381B;
+    --text-main: #3C381B;
+    --main-font: "Comic Sans MS"
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS";
+    height: 100%;
+    overflow: hidden;
+}
+
+.field-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('gambar/field.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    display: block;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.overlay.active {
+    display: flex;
+    pointer-events: auto;
+}
+
+.main-card {
+    width: 90%;
+    max-width: 550px;
+    background: var(--bright-primary);
+    border-radius: 15px;
+    border: 3px solid var(--dark-primary);
+    overflow: hidden;
+    box-shadow: 0 4px 0px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background: var(--dark-primary);
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #fffafa;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.09);
+}
+
+.card-body {
+    padding: 40px 30px;
+    text-align: left;
+}
+
+.card-body h1 {
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.card-body p {
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--text-main);
+}
+
+#landpageContent {
+opacity: 0;
+transition: opacity 0.4s ease;
+}
+
+.landpage-container {
+position: fixed;
+inset: 0;
+pointer-events: auto;
+}
+
+.title-section {
+    margin-top: 60px;
+    text-align: center;
+    color: #fffafa;
+}
+
+.main-title {
+    font-family: 'Balmy';
+    font-size: 4.5rem;
+    text-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.nantoka {
+    font-family: 'Potta One';
+    font-size: 1.2rem;
+    margin-top: 2px;
+    color: #777a45
+}
+
+.character-trio {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.character-trio img {
+    width: 220px;
+}
+
+.buttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.pop-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+    pointer-events: auto;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pop-btn:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.pop-btn img {
+    width: 180px;
+}
+
+.camera-btn { top: 30%; left: 15%; }
+.bear-btn { top: 20%; right: 15%; }
+.pudding-btn { top: 70%; left: 55%; rotate: -9deg }
+
+textarea {
+    width: 100%;
+    height: 150px;
+    background: transparent;
+    border: none;
+    font-family: var(--main-font);
+    font-size: 1.1rem;
+    outline: none;
+    resize: none;
+    margin-top: 10px;
+    color: #3C381B;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px
+}
+
+.input-group label {
+    font-weight: bold;
+    color: var(--card-header);
+}
+
+#toInput {
+    background: transparent;
+    border: none;
+    font-family: "Comic Sans MS";
+    font-size: 1.1rem;
+    outline: none;
+    flex-grow: 1;
+    color: var(--text-main);
+}
+
+#submitNote {
+    background-color: #3C381B;
+    font-family: 'Comic Sans MS';
+    font-size: 1.1rem;
+    color: #fffafa;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#submitNote:hover {
+    transform: scale(1.02);
+    background-color: #514b24;
+}
+
+.collection-card {
+    width: 95%;
+    max-width: 800px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.mini-note {
+    background: #fff;
+    border: 2px solid #3C381B;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 4px 4px 0px rgba(60, 56, 27, 0.1);
+    font-family: 'Comic Sans MS';
+    transition: transform 0.2s;
+}
+
+.mini-note:hover {
+    transform: translateY(-5px);
+}
+
+.mini-to {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0 0 5px 0;
+}
+
+.mini-text {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #555;
+    word-wrap: break-word;
+}
+
