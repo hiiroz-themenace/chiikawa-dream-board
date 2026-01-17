@@ -88,7 +88,7 @@ puddingBtn.addEventListener('click', async () => {
     infoOverlay.classList.add('active');
     const notes = await fetchData("/getnotes");
     if (notes) {
-        infoNotes.innerText = `Notes published: ${notes.length}`;
+        infoNotes.innerText = `Notes posted: ${notes.length}`;
     }
 });
 
