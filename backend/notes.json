@@ -6,51 +6,39 @@
     "createdAt": "2026-01-15T12:59:01.043Z"
   },
   {
-    "id": 1768487964446,
+    "id": 1768642843971,
+    "to": "orang",
+    "note": "adalah pokoknya",
+    "createdAt": "2026-01-17T09:40:43.971Z"
+  },
+  {
+    "id": 1768642979562,
+    "to": "plenger",
+    "note": "weh kenapa refresh otomatis klo sudah up notes",
+    "createdAt": "2026-01-17T09:42:59.562Z"
+  },
+  {
+    "id": 1768643004105,
+    "to": "hardware",
+    "note": "uuaa",
+    "createdAt": "2026-01-17T09:43:24.105Z"
+  },
+  {
+    "id": 1768643032678,
+    "to": "lo",
+    "note": "lah ilang scrollbarnya aokwoakokwoa",
+    "createdAt": "2026-01-17T09:43:52.678Z"
+  },
+  {
+    "id": 1768643223919,
     "to": "tes",
-    "note": "laso",
-    "createdAt": "2026-01-15T14:39:24.446Z"
+    "note": "type shi",
+    "createdAt": "2026-01-17T09:47:03.919Z"
   },
   {
-    "id": 1768488699838,
-    "to": "set",
-    "note": "pe",
-    "createdAt": "2026-01-15T14:51:39.838Z"
-  },
-  {
-    "id": 1768489032855,
-    "to": "pe",
-    "note": "halo",
-    "createdAt": "2026-01-15T14:57:12.855Z"
-  },
-  {
-    "id": 1768489175598,
-    "to": "ha",
-    "note": "ha",
-    "createdAt": "2026-01-15T14:59:35.598Z"
-  },
-  {
-    "id": 1768489215411,
-    "to": "pe",
-    "note": "ep",
-    "createdAt": "2026-01-15T15:00:15.411Z"
-  },
-  {
-    "id": 1768489349354,
-    "to": "ha",
-    "note": "he",
-    "createdAt": "2026-01-15T15:02:29.354Z"
-  },
-  {
-    "id": 1768489402783,
-    "to": "set",
-    "note": "tes",
-    "createdAt": "2026-01-15T15:03:22.783Z"
-  },
-  {
-    "id": 1768617677032,
-    "to": "al",
-    "note": "1234567890qwertyuiopasdfghjklzxcvbnm",
-    "createdAt": "2026-01-17T02:41:17.032Z"
+    "id": 1768643267039,
+    "to": "tes",
+    "note": "lagi",
+    "createdAt": "2026-01-17T09:47:47.039Z"
   }
 ]
